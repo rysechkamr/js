@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function buttonClick() {
+        var input = document.getElementById("input");
+        input.value = "Ой, я поменял свой текст и css!"; 
+        document.getElementById('input').style.color = 'red';
+        document.getElementById('input').style.width = '300px';
+        document.getElementById('input').style.height = '50px';
+        document.getElementById('input').style.borderWidth = '2px';
+        document.getElementById('input').style.borderRadius = '10px';
+      }
+    </script>
+    		<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+	</head>
+    <input type="text" id="input" value="Ку-ку" /> <br>
+    <button onclick="buttonClick()">Нажми на меня!</button>
+  </body>
+</html>
